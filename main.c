@@ -35,9 +35,10 @@ int main(int ac, char **av)
 
 	ft_write(2, "test\n", 5);
 
-	char buf_read[11];
+	char buf_read[13];
 	ssize_t nread = ft_read(0, buf_read, 10);
-	buf_read[10] = 0;
+	buf_read[++nread] = '\n';
+	buf_read[++nread] = '\0';
 	ft_write(1, buf_read, nread);
 
 	char *dup = ft_strdup("biduletrucmachin\n");
