@@ -10,7 +10,7 @@ BONUS_DIR = Bonus
 OBJ_DIR = Obj
 
 SRCS = ft_strlen.s ft_strcpy.s ft_strcmp.s ft_write.s ft_read.s ft_strdup.s
-BONUS_SRCS = ft_atoi_base_bonus.s ft_isspaces.s ft_strchr.s
+BONUS_SRCS = ft_atoi_base_bonus.s ft_isspaces.s ft_strchr.s ft_list_push_front_bonus.s ft_list_size_bonus.s
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.s=.o))
 BONUS_OBJS = $(addprefix $(OBJ_DIR)/, $(BONUS_SRCS:.s=.o))
