@@ -19,7 +19,7 @@ ft_atoi_base:
 	push r13
 	push r14
 	push r15
-	sub rsp, 8
+	sub rsp, 8	  ; realign rsp to 16
 
 	mov r12, rdi
 	mov rbx, rsi
