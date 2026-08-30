@@ -22,16 +22,16 @@ ft_list_remove_if:
 	mov r12, rsi
 	mov r13, rdx
 	mov r14, rcx
-	mov r15, [rbx]	  ; Node
+	mov r15, rbx	  
 
 .loop:
-	mov rcx, [r15]
+	mov rcx, [r15]	  ; Node
 	test rcx, rcx
 	jz .end
 
-	mov rdi, [r15 + DATA]
+	mov rdi, [rcx + DATA]
 	mov rsi, r12
-	push rcx				; curr node->data
+	push rcx				; curr node
 	call r13
 	pop rcx
 	cmp eax, 0
