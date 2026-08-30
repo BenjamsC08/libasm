@@ -7,8 +7,8 @@ section .text
 PLUS  equ 43
 MINUS equ 45
 
-; rdi = str  → r12
-; rsi = base → rbx
+; rdi = str =  r12
+; rsi = base = rbx
 ; r13 = base_len
 ; r14 = sign (+1 / -1)
 ; r15 = acc
