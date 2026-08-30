@@ -36,10 +36,10 @@ ft_list_remove_if:
 .del:
 	mov rdx, [rcx + NEXT]	;get next before free
 	push rdx				; push next
-	push rcx				; push curr->data
+	push rcx				; push curr
 	mov rdi, [rcx + DATA]
 	call r14
-	pop rdi					; get curr->data
+	pop rdi					; get curr
 	call free wrt ..plt
 	pop rdx					; get next (new curr)
 	mov [r15], rdx
